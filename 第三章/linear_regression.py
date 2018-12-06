@@ -19,6 +19,7 @@ losses = np.zeros(500)
 lr = 0.005
 
 for i in range(500):
+    print(i)
     x, y = get_fake_data(32)
 
     y_pred = x * w + b
@@ -49,4 +50,4 @@ for i in range(500):
         plt.xlim(0, 5)
         plt.ylim(0, 13)
         plt.show()
-        plt.pause(0.5)
+        # plt.pause(0.5)
