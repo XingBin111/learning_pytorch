@@ -321,8 +321,8 @@ plt.show()
 
 # 为不同子网络设置不同的学习率，在finetune中经常用到
 # 如果对某个参数不指定学习率，就使用最外层的默认学习率
-optimizer =optim.SGD([
-                {'params': net.features.parameters()}, # 学习率为1e-5
-                {'params': net.classifier.parameters(), 'lr': 1e-2}
-            ], lr=1e-5)
+# optimizer =optim.SGD([
+#                 {'params': net.features.parameters()}, # 学习率为1e-5
+#                 {'params': net.classifier.parameters(), 'lr': 1e-2}
+#             ], lr=1e-5)
 
